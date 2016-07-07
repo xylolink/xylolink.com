@@ -1,0 +1,25 @@
+<footer id="site-footer">
+    <div class="container">
+        <div class="row text-muted text-center">
+
+            <div class="col-md-4">
+                <h3>Contact</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>A propos</h3>
+                <p>{{ site.description }}</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Liens</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="row text-muted text-center">
+            <pre class="bg-footer">{{ site.title }}  |  {{ site.slogan }} |  Powered by <a href="http://jekyllrb.com">Jekyll</a>  |  Réalisé par <a href="mailto:co%6et%61ct%40%61rr%61%69olo%73%2eo%76h">A. Romain</a></pre>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src={{ "/js/bootstrap.min.js" | prepend: site.baseurl }}></script>
+    </footer>

@@ -1,0 +1,64 @@
+---
+layout: default
+title: Xylolink
+type: homepage
+index: 1
+---
+<div class="banner">
+    <div class="wrapper">
+        <div class="jumbotron jumbotron-banner">
+            <h2><i>{{ site.slogan }}</i></h2>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-12">
+            {% assign services_pages = site.pages | where:'type','services' | sorted:'index' %}
+            {% for services_page in services_pages %}
+            <h1><span class="glyphicon {{services_page.icon}}"></span> {{services_page.title}} </h1>
+
+            <ul class="list-group">
+                {% for post in site.posts offset: 0 %}
+                {% if post.categories contains services_page.ref %}
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-12 ">
+                            <div class="thumbnail">
+                                <img src="{{ post.thumb }}" alt="{{ post.alt }}">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12 ">
+                            <div class="caption">
+                                <h3>{{ post.title }}</h3>
+                                <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default" role="button">En savoir plus</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            {% endfor %}
+
+            <h1><span class="glyphicon glyphicon-thumbs-up"></span> Références</h1>
+            <ul class="post-list">
+                <div class="row">
+                    {% for post in site.posts %}
+                    {% if post.categories contains 'references' %}
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                        <a href="{{ post.url }}"><img class="img-responsive img-rounded" src="{{ post.thumb }}" alt="{{ post.alt }}"></a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+
+                </div>
+            </ul>
+
+        </div>
+        {% include aside_actus.html %}
+    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
