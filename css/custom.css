@@ -32,6 +32,11 @@
     color: #F8F8F8;
 }
 
+.jumbotron-inner{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+}
+
 .bg-footer{
     background-color: #564740;
 }
@@ -62,6 +67,10 @@ hr.style2 {
 
 .thumbnail-caption {
     text-align: center;
+}
+
+.jumbotron {
+    font-size: 18px;
 }
 
 /* */
