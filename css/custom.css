@@ -16,7 +16,7 @@
 }
 
 .banner{
-    background: transparent url("/img/banner.jpg") no-repeat scroll center center / cover;
+    background: transparent url("/img/banner.jpg") no-repeat scroll bottom center / cover;
     margin-top: -20px;
 }
 
