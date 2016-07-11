@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca7aa0e-b121-4db4-9681-51181c5277a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdf/Rapport_Final_Etude_Logistique.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdf/presentation_logistique_bois_du_grand_est.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdf/zoom_sur_etude_Bois_GrdEst_pro_innovations.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/references/_posts/2015-12-22-KBS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/references/_posts/2015-12-23-FLC.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/actus/_posts/2016-06-30-logistique-bois-du-grand-est_restitution.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technologies/_posts/2016-06-30-projet_hammer.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technologies/_posts/2016-07-01-anfor.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/references/_posts/2015-12-22-Ref1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/references/_posts/2015-12-22-Ref2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/technologies/_posts/2015-12-22-Presta2.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/references/_posts/2015-12-22-Ref3.md" afterPath="$PROJECT_DIR$/references/_posts/2015-12-22-IMS.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/technologies/_posts/2015-12-22-Presta3.md" afterPath="$PROJECT_DIR$/technologies/_posts/2015-03-01-rdv_transport.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etudes/_posts/2015-01-01-analyse-desserte-forestière-macs-gdax.md" afterPath="$PROJECT_DIR$/etudes/_posts/2015-01-01-analyse-desserte-forestière-macs-gdax.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logistique/_posts/2015-01-01-audit-organisationnel.md" afterPath="$PROJECT_DIR$/logistique/_posts/2015-01-01-audit-organisationnel.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logistique/_posts/2015-01-01-innovation-logistique-participative.md" afterPath="$PROJECT_DIR$/logistique/_posts/2015-01-01-innovation-logistique-participative.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etudes/_posts/2015-01-01-logistique-bois-ge.md" afterPath="$PROJECT_DIR$/etudes/_posts/2015-01-01-logistique-bois-ge.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/references/_posts/2015-12-22-Ref4.md" afterPath="$PROJECT_DIR$/references/_posts/2015-12-22-Ref4.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actus/_posts/2016-01-15-logistique-bois-du-grand-est.md" afterPath="$PROJECT_DIR$/actus/_posts/2016-01-15-logistique-bois-du-grand-est.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page-full.html" afterPath="$PROJECT_DIR$/_layouts/page-full.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/page.html" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xylolink.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,22 +31,6 @@
               <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015-01-01-audit-organisationnel.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logistique/_posts/2015-01-01-audit-organisationnel.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.19337016">
-                <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -109,8 +68,8 @@
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.19271949">
-                <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <first_editor vertical-scroll-proportion="0.64579254">
+                <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -118,6 +77,16 @@
           </provider>
           <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -193,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/prestations.html" />
         <option value="$PROJECT_DIR$/nos-missions.html" />
         <option value="$PROJECT_DIR$/Logistique.html" />
         <option value="$PROJECT_DIR$/Technologies.html" />
@@ -243,6 +211,7 @@
         <option value="$PROJECT_DIR$/references/_posts/2015-12-22-IMS.md" />
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/_layouts/page-full.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
@@ -313,7 +282,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_layouts" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,15 +378,15 @@
     <frame x="-1" y="29" width="1922" height="1025" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27891156" sideWeight="0.49144384" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27891156" sideWeight="0.4893048" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879817" sideWeight="0.49572194" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.49572194" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879817" sideWeight="0.50427806" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27891156" sideWeight="0.51069516" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -492,13 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -811,14 +773,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logistique/logistique.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07772021">
@@ -951,6 +905,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -959,8 +929,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.19271949">
-            <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <first_editor vertical-scroll-proportion="0.64579254">
+            <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
             <folding />
           </first_editor>
           <second_editor />
