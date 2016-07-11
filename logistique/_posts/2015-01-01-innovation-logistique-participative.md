@@ -16,11 +16,13 @@ Xylolink construit une démarche d'accompagnement à la mise en oeuvre des innov
 Afin que l'entreprise garde la maîtrise du processus d'innovation, Xylolink favorise la montée en compétence des acteurs 
 par leur formation et leur implication directe à toutes les étapes.
 
-![démarche participative]({{ page.img1 }}){: .article-image }  
-*Recherche de solutions en réunion collective*
+- *Recherche de solutions en réunion collective*{: .article-legend } 
+
+![démarche participative]({{ page.img1 }}){: .article-thumb }  
+
+- *Support de discussion d'une solution proposée*{: .article-legend }  
 
 ![solution]({{ page.thumb }}){: .article-thumb }  
-*Support de discussion d'une solution proposée*
 
 En fonction du type d'innovation mise en oeuvre, une innovation technologique peut être requise. 
 Xylolink accompagne également les entreprises le souhaitant dans le diagnostic de leur système d'information et son évolution.  

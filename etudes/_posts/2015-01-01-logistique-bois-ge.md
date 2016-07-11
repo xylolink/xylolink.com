@@ -2,6 +2,9 @@
 layout: post
 title:  "Innovations pour la logistique Bois du Grand Est"
 thumb: /img/2015-01-01-carte-log-ge.png
+pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
+pdf2: /pdf/Rapport_Final_Etude_Logistique.pdf
+pdf3: /pdf/zoom_sur_etude_Bois_GrdEst_pro_innovations.pdf
 ---
 
 Les observatoires régionaux des transports (ORT) du Grand-Est ont pour finalité l’amélioration des 
@@ -30,7 +33,14 @@ maximum**.
 La réalisation de cette étude a été confiée à Richard EMEYRIAT (FORET LOGISTIQUE CONSEIL) et 
 Adrien ARRAIOLOS (XYLOLINK). 
 
-La phase de diagnostic et de proposition d'innovation est terminée. Le projet se poursuit donc sur sa [phase d'approfondissement]({% post_url 2016-01-15-logistique-bois-du-grand-est %})
+Le projet est maintenant terminé.
 
+La [tranche conditionnelle]({% post_url 2016-01-15-logistique-bois-du-grand-est %}) a permis l'approfondissement de 3 concepts phares.
 
-Renseignements auprès de l’ORTAL au 03.88.13.08.25 - ortal@i-carre.net
+L'ensemble des résultats a été présenté au cours du [colloque de restitution]({% post_url 2016-06-30-logistique-bois-du-grand-est_restitution %}).
+
+Les livrables peuvent être téléchargés aux liens suivants :   
+
+- [Rapport final de l'étude]({{page.pdf2}})
+- [Plaquette de présentation de l'approvisionnement en bois du Grand Est]({{page.pdf1}})
+- [Plaquette de présentation des innovations]({{page.pdf3}})

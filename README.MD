@@ -9,3 +9,7 @@
  - Completer contenu
  - ~~Template des articles~~
  - Résumé des articles
+ - Remettre le menu actualité dans les posts "Logistique"
+ - Enlever le menu Actualité dans la liste des actualités (doublon)
+ - Gérer les contacts
+ - On met quoi dans les "liens" dans le footer ?
