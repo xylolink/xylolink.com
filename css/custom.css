@@ -131,3 +131,7 @@ hr.style2 {
     margin: 0 auto;
     display: block;
 }
+
+.img-thumbnail {
+    max-height: 300px;
+}
