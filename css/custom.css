@@ -18,14 +18,14 @@
 .wrapper-content{
     margin-top: -150px;
     background: #FFFFFF;
-    padding: 6px;
+    padding: 12px;
 }
 
 .banner{
     background: transparent url("/img/banner.jpg") no-repeat scroll bottom center / cover;
     margin-top: -20px;
     z-index: -1;
-    min-height: 900px;
+    /*min-height: 900px;*/
     border-bottom: solid 8px #D7D6E4;
     padding-bottom: 100px;
 }
@@ -33,7 +33,7 @@
 .banner-small{
     background: transparent url("/img/banner.jpg") no-repeat scroll center center / cover;
     margin-top: -20px;
-    height: 100px;
+    height: 250px;
 }
 
 .jumbotron-banner{
