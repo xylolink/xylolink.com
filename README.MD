@@ -10,11 +10,15 @@
  - modification du jumbotron-inner
  - modification du banner 
  - modification du wrapper pour le contenu principal, ajout de la classe wrapper-content pour déborder sur le banner (ne marche pas dans github pages)
+ - modification de la variable "description"
+ - modification du css du jumbotron
+ - modification du footer (markdownify "a propos")
 
 * Todo: 
- - La variable "presentation" n'est pas prise en compte sous github pages (en fait la balise a sauté dans github si on examine le HTML compilé)
+ - ~~La variable "presentation" n'est pas prise en compte sous github pages (en fait la balise a sauté dans github si on examine le HTML compilé)~~
+ >> fonctionne finalement ?
  - ~~Modif lorem ipsum~~
- - Completer contenu
+ - ~~Completer contenu~~
  - ~~Template des articles~~
  - Résumé des articles
  - Remettre le menu actualité dans les posts "Logistique"
