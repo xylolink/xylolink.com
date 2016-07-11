@@ -35,6 +35,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.xylolink.com" # the base hostname & protocol for your site
 twitter_username: xylolink
 github_username:  xylolink
+excerpt_separator: "\n"
 
 # Build settings
 markdown: kramdown
