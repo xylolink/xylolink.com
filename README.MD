@@ -23,7 +23,12 @@
  - ~~Completer contenu~~
  - ~~Template des articles~~
  - Résumé des articles
+   - Excerpt_separator passé de \n\n à \n. Donc soit regex soit via {{ post.content | truncatewords: x }}
  - Remettre le menu actualité dans les posts "Logistique"
+  - Moi je l'ai. Ou pas compris ?
  - Enlever le menu Actualité dans la liste des actualités (doublon)
+   - Ajout d'un layout actus basé sur page-full (à améliorer)
  - Gérer les contacts
  - On met quoi dans les "liens" dans le footer ?
+  - On peut virer, ou des sites comme sur le site de Richard ?
+ - /!\ overflow-x: hidden à réparer proprement (version bootstrap ?)

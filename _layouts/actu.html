@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-full
 ---
 {% for post in site.posts  %}
 {% if post.categories contains page.ref %}
@@ -10,10 +10,8 @@ layout: page
         </h3>
 
         <div class="row">
-            <div class="col-md-3">
-                <a href="{{ post.url | prepend: site.baseurl }}"><img class="img-responsive img-thumbnail" src=" {{post.thumb}}"></a>
-            </div>
-            <div class="col-md-9">
+
+            <div class="col-md-12">
                 <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
                 <span class="label label-default">{{ site.author }}</span>
                 <p>{{ post.excerpt }}</p>
