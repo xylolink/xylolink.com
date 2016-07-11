@@ -1,8 +1,10 @@
 # Xylolink.com
 
-* Avec docker
- - Aperçu: docker run --rm -v="$(pwd):/srv/jekyll" -it -p 4000:4000 jekyll/jekyll jekyll s -w --force_polling
- - Build: docker run --rm -v="$(pwd):/srv/jekyll" -it jekyll/jekyll jekyll b
+* Avec Docker for Windows
+ - Aperçu: 
+   - docker build -t jekyll .
+   - docker run --rm -v="$(pwd):/srv" -it -p 4000:4000 jekyll jekyll s -w -H 0.0.0.0 --force_polling
+ - Build: docker run --rm -v="$(pwd):/srv" -it -p 4000:4000 jekyll jekyll b
 
 * Done:
  - Ajout de contenu
