@@ -21,6 +21,12 @@
     padding: 12px;
 }
 
+.wrapper-content-small{
+    margin-top: -400px;
+    background: #FFFFFF;
+    padding: 12px;
+}
+
 .banner{
     background: transparent url("/img/banner.jpg") no-repeat scroll bottom center / cover;
     margin-top: -20px;
@@ -31,9 +37,9 @@
 }
 
 .banner-small{
-    background: transparent url("/img/banner.jpg") no-repeat scroll center center / cover;
+    background: transparent url("/img/banner_1.jpg") no-repeat scroll center center / cover;
     margin-top: -20px;
-    height: 250px;
+    height: 500px;
 }
 
 .jumbotron-banner{
