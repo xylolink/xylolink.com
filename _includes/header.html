@@ -1,49 +1,39 @@
 <header>
-    <div id="top-header">
-        <img class="center-block" src="/img/logo.png" style=" border: 0;"></img>
+    <div id="header-top" class="text-center">
+        <img src="/img/logo.png"></img>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-
-            <div class="collapse navbar-collapse nav-large" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    {% assign actus_page = (site.pages | where:"title", "Actualités") %}
-                    <li><a href="{{ actus_page.first.url }}">{{ actus_page.first.title }}</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-center">
-
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    {% assign home_pages = site.pages | where: "type","homepage" | sort: 'index' %}
-                    {% assign services_pages = site.pages | where:"type", "services" | sort: 'index' %}
-                    {% assign innav_pages = site.pages | where:'innav','true' | sort: 'index' %}
-                    {% for page in home_pages %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nos services <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            {% for page in services_pages %}
-                            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    {% for page in innav_pages %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            {% assign sPages = site.pages | where: 'place', 'left' | sort: 'index' %}
+            {% for p in sPages %}
+            <li class="nav-item {% if p.url == page.url %}active{% endif %}">
+                <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            </li>
+            {% endfor %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nos Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% assign sPages = site.pages | where: 'place', 'dropdown' | sort: 'index' %}
+                {% for p in sPages %}
+                <a class="dropdown-item" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+                {% endfor %}
+              </div>
+            </li>
+            {% assign sPages = site.pages | where: 'place', 'right' | sort: 'index' %}
+            {% for p in sPages %}
+            <li class="nav-item {% if p.url == page.url %}active{% endif %}">
+                <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            </li>
+            {% endfor %}
+        </div>
+    </div>
     </nav>
 </header>

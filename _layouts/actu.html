@@ -1,27 +1,31 @@
 ---
-layout: page-full
+layout: default
 ---
-{% for post in site.posts  %}
-{% if post.categories contains page.ref %}
-<article>
 
-        <h3>
-            {{ post.title }}
-        </h3>
+<div class="row justify-content-center text-justify mt-2">
+    <div class="col-10">
+        {% for post in site.actus  %}
+        <article>
 
-        <div class="row">
+            <h3>
+                {{ post.title }}
+            </h3>
 
-            <div class="col-md-12">
-                <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <span class="label label-default">{{ site.author }}</span>
-                <p>{{ post.excerpt }}</p>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <span class="label label-default">{{ site.author }}</span>
+                    <p>{{ post.content }}</p>
+                </div>
+
             </div>
 
-        </div>
+        </article>
+        <hr class="style2">
 
-</article>
-<hr class="style2">
+        {% endfor %}
 
-{% endif %}
-{% endfor %}
-<p class="rss-subscribe">S'abonner <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
+
+</div>

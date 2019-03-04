@@ -40,3 +40,31 @@ excerpt_separator: "\n"
 # Build settings
 markdown: kramdown
 
+
+# Gems et extensions
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-paginate
+exclude:
+- Dockerfile
+
+collections_dir: collections
+
+collections:
+  - etudes
+  - references
+  - logistique
+  - technologies
+  - actus
+  
+defaults:
+  -
+    scope:
+      path: "collections/_etudes" # an empty string here means all files in the project
+    values:
+      icon: "fas fa-chart-area"
+
+sass:
+  sass_dir: css
+  style: compressed

@@ -1,0 +1,22 @@
+---
+layout: page-full
+title: Références
+place: right
+permalink: /references/
+innav: true
+index: 5
+---
+<ul class="post-list">
+    <div class="row">
+        {% for post in site.posts %}
+        {% if post.categories contains 'references' %}
+
+        <div class="col-xs-6 col-sm-4 col-md-3">
+            <a href="{{ post.url }}"><img class="img-responsive img-rounded" src="{{ post.thumb }}" alt="{{ post.alt }}"></a>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+</ul>

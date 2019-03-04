@@ -1,51 +1,72 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+@import 'bootstrap/bootstrap';
+@import 'variables';
+@import 'bootswatch';
+@import 'fontawesome/fontawesome';
+@import "fontawesome/solid";
+@import "fontawesome/brands";
+@import "fontawesome/regular";
 
+body {
+    background-image: url(/img/topography.png);
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+#header-top {
+    background-color: #e6e6e6;
+}
 
-$spacing-unit:     30px;
+#header-bottom {
+    height: 75vh;
+    display: grid;
+    border-bottom: solid 8px #D7D6E4;
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+#header-home {
+    height: 75vh;
+    display: grid;
+    border-bottom: solid 8px #D7D6E4;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+#top-container {
+    h2 {
+        font-family: 'Amatic SC', cursive;
+        color: white;
+        text-align: center;
+        margin: 1em 0;
+        font-size: 2em;
+        text-shadow: 0px 0px 20px $black;
+        }
+}
 
-// Width of the content area
-$content-width:    800px;
+#main-container {
+    background-color: #FFF8DC;
+    min-height: 20em;
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+.parallax-bg {
+    background-image: url({{site.baseurl}}/img/banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+.separator {
+    height: 3em;
+    display: grid;
+    p {
+        color: $white;
+        text-align: center;
+        margin: auto 0;
+        font-size: 5vh;
+        text-shadow: 0px 0px 10px $black;
     }
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+#page-footer {
+    pre {
+        color: $gray-400;
+    }
+}
