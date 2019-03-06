@@ -14,14 +14,16 @@
     {%- endif -%}
 
     <div id="top-container">
-      <div class="container">
+      <div class="container py-3">
         {%- if page.title == "Xylolink" -%}
-        <h2>
-          <i id="main-slogan">{{ site.slogan }}</i>
-        </h2>
+        <div id="main-slogan">
+          <h2 class="white-shadow align-text-middle border-bottom">
+            {{ site.slogan }}
+          </h2>
+        </div>
         {%- else -%}
-        <h2>
-          <i>{%if page.type%}{{ page.type | capitalize }}{%else%}{{ page.title }}{%endif%}</i>
+        <h2 class="white-shadow align-text-middle border-bottom">
+          {%if page.type%}{{ page.type | capitalize }}{%else%}{{ page.title }}{%endif%}
         </h2>
         {% endif %}
       </div>

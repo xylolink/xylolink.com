@@ -44,23 +44,16 @@ body {
 
 #top-container {
     position: relative;
-    margin-top: -75vh;
-    h2 {
-        display: flex;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        margin: 1em 0;
-        font-size: 2em;
-        text-shadow: 0px 0px 20px $black;        
-        }
+    margin-top: -75vh;    
+}
+
+.white-shadow {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px $black;     
 }
 
 #main-slogan {
     min-height: 20vh;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #main-container {
