@@ -12,12 +12,12 @@ index: 1
         </div>
     </div>
     <hr>
-    <h3 class="text-center">Services</h3>
+    <h3 class="text-center">Services</h3>    
     <div class="row">
     {% assign cols = "etudes,logistique,technologies" | split: "," %}
     {% for col in cols %}
     {% for item in site.[col] | limit: 1 %}
-    <div class="col-4 d-flex align-items-stretch">
+    <div class="col-sm mx-3">
         <div class="card mb-3">
             <h5 class="card-header">{{col | capitalize}}</h5>
             <div class="card-body">

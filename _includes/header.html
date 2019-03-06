@@ -1,39 +1,5 @@
 <header>
     <div id="header-top" class="text-center">
         <img src="/img/logo.png"></img>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            {% assign sPages = site.pages | where: 'place', 'left' | sort: 'index' %}
-            {% for p in sPages %}
-            <li class="nav-item {% if p.url == page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-            </li>
-            {% endfor %}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nos Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                {% assign sPages = site.pages | where: 'place', 'dropdown' | sort: 'index' %}
-                {% for p in sPages %}
-                <a class="dropdown-item" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-                {% endfor %}
-              </div>
-            </li>
-            {% assign sPages = site.pages | where: 'place', 'right' | sort: 'index' %}
-            {% for p in sPages %}
-            <li class="nav-item {% if p.url == page.url %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-            </li>
-            {% endfor %}
-        </div>
-    </div>
-    </nav>
+    </div>    
 </header>

@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
+  {% include head.html %}
 
-{% include head.html %}
-
-<body>
-
-{% include header.html %}
-{%- if page.title == "Xylolink" -%}
-<div id="header-home" class="parallax-bg">
-</div>
-{%- else -%}
-<div id="header-bottom" class="parallax-bg">
-    <h2><i>{{ page.title }}</i></h2>
-</div>
-{%- endif -%}
-
-<div id="top-container" style="{%- if page.title == "Xylolink" -%}margin-top: -55vh;{%- else -%}margin-top: -75vh;{%- endif -%}">
-        {%- if page.title == "Xylolink" -%}
-        <h2><i>{{ site.slogan }}</i></h2>
-        {%- else -%}
-        <h2><i>{%if page.type%}{{ page.type | capitalize }}{%else%}{{page.title}}{%endif%}</i></h2>
-        {% endif %}
-    <div id="main-container" class="container rounded-top pt-2">
-        {{ content }}
+  <body>
+    {% include header.html %} {% include nav.html %} {%- if page.title == "Xylolink" -%}
+    <div id="header-home" class="parallax-bg"></div>
+    {%- else -%}
+    <div id="header-bottom" class="parallax-bg">
+      <h2>
+        <i>{{ page.title }}</i>
+      </h2>
     </div>
-</div>
+    {%- endif -%}
 
-{% include footer.html %}
-</body>
+    <div id="top-container">
+      <div class="container">
+        {%- if page.title == "Xylolink" -%}
+        <h2>
+          <i id="main-slogan">{{ site.slogan }}</i>
+        </h2>
+        {%- else -%}
+        <h2>
+          <i>{%if page.type%}{{ page.type | capitalize }}{%else%}{{ page.title }}{%endif%}</i>
+        </h2>
+        {% endif %}
+      </div>
 
+      <div id="main-container" class="container rounded-top pt-5 mb-5">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
 </html>
