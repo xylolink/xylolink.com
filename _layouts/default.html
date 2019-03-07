@@ -4,12 +4,17 @@
 
   <body>
     {% include header.html %} {% include nav.html %} {%- if page.title == "Xylolink" -%}
-    <div id="header-home" class="parallax-bg"></div>
+    <div
+      id="header-home"
+      class="parallax-bg"
+      style="background-image: url({{ site.baseurl }}/img/{%if page.img %}{{page.img}}{%else%}{{"banner.jpg"}}{%endif%});"
+    ></div>
+    
     {%- else -%}
-    <div id="header-bottom" class="parallax-bg">
-      <h2>
-        <i>{{ page.title }}</i>
-      </h2>
+    <div 
+        id="header-bottom" class="parallax-bg"
+        style="background-image: url({{ site.baseurl }}/img/{%if page.img %}{{page.img}}{%else%}{{"banner.jpg"}}{%endif%});"
+    >
     </div>
     {%- endif -%}
 
@@ -27,10 +32,9 @@
         </h2>
         {% endif %}
       </div>
-
-      <div id="main-container" class="container rounded-top pt-5 mb-5">
-        {{ content }}
-      </div>
+    </div>
+    <div id="main-container" class="container rounded-top pt-5 mb-5">
+      {{ content }}
     </div>
 
     {% include footer.html %}

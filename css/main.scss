@@ -5,86 +5,111 @@
 // @import 'variables';
 // @import 'bootswatch';
 @import 'fontawesome/fontawesome';
-@import "fontawesome/solid";
-@import "fontawesome/brands";
-@import "fontawesome/regular";
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
 
 body {
-    background-image: url(/img/topography.png);
+  background-image: url(/img/topography.png);
+  position: relative;
+  min-height: 100vh;
 }
 
 #header-top {
-    background-color: rgba(255,255,255,0);
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#header-bottom {
-    height: 75vh;
-    display: grid;
-    border-bottom: solid 8px #D7D6E4;
-}
-
-.sticky-nav {
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
+  background-color: rgba(255, 255, 255, 0);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-home {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 55px;
-    height: 85vh;
-    // display: grid;
-    border-bottom: solid 8px #D7D6E4;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 85vh;
+  // display: grid;
+  border-bottom: solid 8px #d7d6e4;
+}
+
+#header-bottom {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 75vh;
+  display: grid;
+  border-bottom: solid 8px #d7d6e4;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+
+.sticky-bg {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 85vh;
+  border-bottom: solid 8px #d7d6e4;
 }
 
 #top-container {
-    position: relative;
-    margin-top: -75vh;    
+  position: relative;
+  margin-top: -75vh;
 }
 
 .white-shadow {
-    color: #FFFFFF;
-    text-shadow: 0px 0px 20px $black;     
+  color: #ffffff;
+  text-shadow: 0px 0px 20px $black;
 }
 
 #main-slogan {
-    min-height: 20vh;    
+  min-height: 20vh;
 }
 
 #main-container {
-    position: relative;
-    background-color:  rgba(255,255,255,0.85);
-    min-height: 20em;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 20em;
 }
 
 .parallax-bg {
-    background-image: url({{site.baseurl}}/img/banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.etude-img {
+  background-image: url({{site.baseurl}}/img/etudeGE.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .separator {
-    height: 3em;
-    display: grid;
-    p {
-        color: $white;
-        text-align: center;
-        margin: auto 0;
-        font-size: 5vh;
-        text-shadow: 0px 0px 10px $black;
-    }
+  height: 3em;
+  display: grid;
+  p {
+    color: $white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 5vh;
+    text-shadow: 0px 0px 10px $black;
+  }
 }
 
 #page-footer {
-    position: relative;    
-    pre {
-        color: $gray-400;
-    }
+  position: relative;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pre {
+    color: $gray-400;
+  }
 }
