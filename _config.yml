@@ -52,11 +52,19 @@ exclude:
 collections_dir: collections
 
 collections:
-  - etudes
-  - references
-  - logistique
-  - technologies
-  - actus
+  references:
+  etudes:
+    output: true
+    permalink: /etudes/:title
+  logistique:
+    output: true
+    permalink: /logistique/:title
+  technologies:
+    output: true
+    permalink: /technologies/:title
+  actus:
+    output: true
+    permalink: /actualites/:title
   
 defaults:
   -

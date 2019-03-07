@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Innovations pour la logistique Bois du Grand Est"
 thumb: /img/2015-01-01-carte-log-ge.png
 pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
