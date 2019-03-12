@@ -8,7 +8,8 @@
 # Site settings
 title: Xylolink
 email: webmaster@xylolink.com
-slogan: L'innovation logistique et technologique au service de l'approvisionnement en bois
+slogan1: L'innovation logistique et technologique 
+slogan2: Au service de l'approvisionnement en bois
 permalink: /:categories/:title.html
 description: > # this means to ignore newlines until "baseurl:"
   Les actions de Xylolink sont principalement menées par [Adrien Arraiolos](https://www.linkedin.com/in/adrienarraiolos),

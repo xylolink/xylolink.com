@@ -1,5 +1,6 @@
 ---
 title:  "Innovations pour la logistique Bois du Grand Est"
+level: 1
 thumb: /img/2015-01-01-carte-log-ge.png
 pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
 pdf2: /pdf/Rapport_Final_Etude_Logistique.pdf
