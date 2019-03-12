@@ -7,10 +7,10 @@ menu: main
 index: 1
 ---
 
-<div class="d-flex flex-column justify-content-around h-100 m-2">
+<div class="d-flex flex-column justify-content-around h-90 m-1">
         {% assign cols = "technologies,etudes,logistique" | split: "," %}
         {% for col in cols %}
-        <div class="p-2">
+        <div class="p-1">
             <div id="carousel{{col}}" class="carousel slide w-100 max-vh-25 " data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel{{col}}" data-slide-to="0" class="active"></li>

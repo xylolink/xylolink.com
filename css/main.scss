@@ -58,14 +58,49 @@ body {
     position: relative;
     margin-top: -100vh;
   }
+  #top-container-page {
+    position: relative;
+    margin-top: -100vh;
+  }
+  #main-container {
+    position: relative;
+    min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    min-height: 20em;
+    margin-top: -80vh;
+  }
+  #page-title {
+    min-height: 20vh;
+  }
 }
 
 @include media-breakpoint-up(lg) {
   #top-container {
     position: sticky;
-    top: 55px;
+    top: 67px;
     margin-top: -100vh;
     height: 100%;
+  }
+  #top-container-page {   
+    position: sticky;
+    top: 67px;
+    margin-top: -100vh;
+    height: 100%;
+  }
+  #main-container {
+    position: relative;
+    margin-top: -100vh;
+    min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    margin-top: -95vh;
+    min-height: 20em;
+  }
+  #page-title {
+    min-height: 35vh;
   }
 }
 
@@ -87,6 +122,9 @@ body {
   background-color: rgba(0,0,0,0.50)
 }
 
+.h-90 {
+  height: 90%;
+}
 .max-vh-25 {
   max-height: 25vh;
 }
@@ -95,24 +133,13 @@ body {
   min-height: 75vh;
 }
 
-#page-title {
-  min-height: 75vh;
-}
+
 
 @include media-breakpoint-down(md) {
-  #main-container {
-    position: relative;
-    min-height: 20em;
-  }
+
 }
 
-@include media-breakpoint-up(lg) {
-  #main-container {
-    position: relative;
-    margin-top: -100vh;
-    min-height: 20em;
-  }
-}
+
 
 #main-content {
   background-color: rgba(255, 255, 255, 0.87);
