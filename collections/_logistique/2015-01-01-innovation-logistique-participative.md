@@ -1,5 +1,6 @@
 ---
 layout: page-full
+level: 1
 title:  "Innovation logistique participative"
 date:   2015-01-01 18:34:53 +0100
 thumb: /img/2015-01-01-innovation-log-thumb.png
