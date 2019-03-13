@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Innovations pour la logistique Bois du Grand Est"
 level: 1
 thumb: /img/2015-01-01-carte-log-ge.png
