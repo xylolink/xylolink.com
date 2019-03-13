@@ -1,44 +1,42 @@
 ---
 layout: default
 title: Xylolink
+icon: /img/logo2019_bg.png
 place: left
 menu: main
 index: 1
 ---
 
-<div class="row justify-content-center text-justify">
-        <div class="col-10">
-            {{ site.presentation | markdownify }}
-        </div>
-    </div>
-    <hr>
-    <h3 class="text-center">Services</h3>
-    <div class="row">
-    {% assign cols = "etudes,logistique,technologies" | split: "," %}
-    {% for col in cols %}
-    {% for item in site.[col] | limit: 1 %}
-    <div class="col-4 d-flex align-items-stretch">
-        <div class="card mb-3">
-            <h5 class="card-header">{{col | capitalize}}</h5>
-            <div class="card-body">
-                <h6 class="card-title">{{item.title}}</h6></a>
+<div class="d-flex flex-column justify-content-around h-90 m-1">
+        {% assign cols = "technologies,etudes,logistique" | split: "," %}
+        {% for col in cols %}
+        <div class="p-1">
+            <div id="carousel{{col}}" class="carousel slide w-100 max-vh-25 " data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    {% for item in site.[col] %}
+                    <li data-target="#carousel{{col}}" data-slide-to="{{forloop.index0}}" {%if forloop.first%} class="active"{%endif%}></li>
+                    {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for item in site.[col] %}
+                    <div class="carousel-item max-vh-25{%if forloop.first%} active{%endif%}">
+                        <img src="{{item.thumb}}" class="d-block w-100" alt="Card image">
+                        <div class="carousel-caption text-light bg-dark-50 white-shadow ">
+                            <h5>{{col | capitalize}}</h5>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>                    
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carousel{{col}}" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel{{col}}" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <img class="img-fluid" src="{{item.thumb}}" alt="Card image">
-            <div class="card-body py-2">
-                    <a href="{{item.url}}" class="stretched-link"></a>
-            </div>
         </div>
-    </div>
-    {% endfor %}
-    {% endfor %}
-    </div>
-    <hr>
-    <h3 class="text-center">Références</h3>
-    <div class="row">
-    {% for item in site.references %}
-    <div class="col border rounded mx-2 d-flex align-items-center justify-content-center">
-        <img class="img-fluid" src="{{item.thumb}}">
-    </div>
-    {% endfor %}
-    </div>
+        {% endfor %}               
 </div>

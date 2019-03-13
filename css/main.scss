@@ -2,71 +2,185 @@
 ---
 
 @import 'bootstrap/bootstrap';
-@import 'variables';
-@import 'bootswatch';
+// @import 'variables';
+// @import 'bootswatch';
 @import 'fontawesome/fontawesome';
-@import "fontawesome/solid";
-@import "fontawesome/brands";
-@import "fontawesome/regular";
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
 
 body {
-    background-image: url(/img/topography.png);
+  background-image: url(/img/topography.png);
+  position: relative;
+  min-height: 100vh;
 }
 
 #header-top {
-    background-color: #e6e6e6;
-}
-
-#header-bottom {
-    height: 75vh;
-    display: grid;
-    border-bottom: solid 8px #D7D6E4;
+  background-color: rgba(255, 255, 255, 0);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-home {
-    height: 75vh;
-    display: grid;
-    border-bottom: solid 8px #D7D6E4;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 100vh;
+  border-bottom: solid 8px #d7d6e4;
 }
 
-#top-container {
-    h2 {
-        font-family: 'Amatic SC', cursive;
-        color: white;
-        text-align: center;
-        margin: 1em 0;
-        font-size: 2em;
-        text-shadow: 0px 0px 20px $black;
-        }
+#header-bottom {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 50vh;
+  border-bottom: solid 8px #d7d6e4;
 }
 
-#main-container {
-    background-color: #FFF8DC;
+.sticky-nav {
+  // background-image: url(/img/topography.png);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+// .sticky-bg {
+//   position: sticky;
+//   position: -webkit-sticky;
+//   top: 55px;
+//   height: 85vh;
+//   border-bottom: solid 8px #d7d6e4;
+// }
+@include media-breakpoint-down(md) {
+  #top-container {
+    position: relative;
+    margin-top: -100vh;
+  }
+  #top-container-page {
+    position: relative;
+    margin-top: -100vh;
+  }
+  #main-container {
+    position: relative;
     min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    min-height: 20em;
+    margin-top: -80vh;
+  }
+  #page-title {
+    min-height: 20vh;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #top-container {
+    position: sticky;
+    top: 67px;
+    margin-top: -100vh;
+    height: 100%;
+  }
+  #top-container-page {   
+    position: sticky;
+    top: 67px;
+    margin-top: -100vh;
+    height: 100%;
+  }
+  #main-container {
+    position: relative;
+    margin-top: -100vh;
+    min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    margin-top: -95vh;
+    min-height: 20em;
+  }
+  #page-title {
+    min-height: 35vh;
+  }
+}
+
+#title-logo {
+  width: 100%;
+  height: auto;
+}
+
+.white-shadow {
+  color: #ffffff;
+  text-shadow: 0px 0px 20px $black;
+}
+
+.bg-transparent-25 {
+  background-color: rgba(255,255,255,0.75)
+}
+
+.bg-dark-50 {
+  background-color: rgba(0,0,0,0.50)
+}
+
+.h-90 {
+  height: 90%;
+}
+.max-vh-25 {
+  max-height: 25vh;
+}
+
+#main-slogan {
+  min-height: 75vh;
+}
+
+
+
+@include media-breakpoint-down(md) {
+
+}
+
+
+
+#main-content {
+  background-color: rgba(255, 255, 255, 0.87);
 }
 
 .parallax-bg {
-    background-image: url({{site.baseurl}}/img/banner.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.etude-img {
+  background-image: url({{site.baseurl}}/img/etudeGE.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .separator {
-    height: 3em;
-    display: grid;
-    p {
-        color: $white;
-        text-align: center;
-        margin: auto 0;
-        font-size: 5vh;
-        text-shadow: 0px 0px 10px $black;
-    }
+  height: 3em;
+  display: grid;
+  p {
+    color: $white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 5vh;
+    text-shadow: 0px 0px 10px $black;
+  }
 }
 
 #page-footer {
-    pre {
-        color: $gray-400;
-    }
+  // background-image: url(/img/topography.png);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pre {
+    color: $gray-400;
+  }
 }
