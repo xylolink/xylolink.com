@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Analyse de la desserte forestière - Grand Dax / Marennes Adour Côtes Océanes"
 thumb: /img/2015-01-01-illustration_desserte_TOP.jpeg
 illustration1: /img/2015-01-01-extraction_atlas.png

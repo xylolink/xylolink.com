@@ -14,8 +14,8 @@ layout: default
             <div class="row">
 
                 <div class="col-md-12">
-                    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <span class="label label-default">{{ site.author }}</span>
+                    <h5><span class="badge badge-info">{{ post.category | capitalize }}</span>
+                    <small><span>{% include date.html date=post.date %}</span></small></h5>
                     <p>{{ post.content }}</p>
                 </div>
 
