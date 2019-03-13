@@ -11,15 +11,15 @@ index: 1
         {% assign cols = "technologies,etudes,logistique" | split: "," %}
         {% for col in cols %}
         <div class="p-1">
-            <div id="carousel{{col}}" class="carousel slide w-100 max-vh-25 " data-ride="carousel">
+            <div id="carousel{{col}}" class="carousel slide w-100 max-vh-25 " data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel{{col}}" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel{{col}}" data-slide-to="1"></li>
-                    <li data-target="#carousel{{col}}" data-slide-to="2"></li>
+                    {% for item in site.[col] %}
+                    <li data-target="#carousel{{col}}" data-slide-to="{{forloop.index0}}" {%if forloop.first%} class="active"{%endif%}></li>
+                    {% endfor %}
                 </ol>
                 <div class="carousel-inner">
-                    {% for item in site.[col] | limit: 1 %}
-                    <div class="carousel-item max-vh-25 active {%- if item.level == 1 -%}{{"active "}}{%- endif -%} ">
+                    {% for item in site.[col] %}
+                    <div class="carousel-item max-vh-25{%if forloop.first%} active{%endif%}">
                         <img src="{{item.thumb}}" class="d-block w-100" alt="Card image">
                         <div class="carousel-caption text-light bg-dark-50 white-shadow ">
                             <h5>{{col | capitalize}}</h5>
