@@ -1,25 +1,14 @@
-<footer id="page-footer" class="bg-dark text-light font-weight-light pt-3">
+<footer id="page-footer" class="bg-dark text-light font-weight-light pt-1">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="text-center">A propos</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 text-center">
                 <p>{{ site.description | markdownify }}</p>
             </div>
-            <div class="col-md-4">
-                <h3 class="text-center">Contact</h3>
-            </div>
         </div>
-        <hr>
         <div class="col-12 text-center">
             <pre>{{site.title}} | Powered by <a href="https://jekyllrb.com">Jekyll</a> | Site par <a href="mailto:co%6e&#116;%61&#99;t%40%61&#114;&#114;%61%69&#111;&#108;&#111;%73%2eo%76&#104;">A. Romain</a></pre>
         </div>
-        <div class="col-12 text-center">
-            <pre>{{site.slogan}}</pre>
-            <!-- Piwik Image Tracker-->
-            <img src="http://analytics.xylolink.com/piwik.php?idsite=4&rec=1" style="border:0" alt="" />
-            <!-- End Piwik -->
-        </div>
-    </div>
+    </div >
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src={{ "/js/jquery.min.js" | prepend: site.baseurl }}></script>
     <script src={{ "/js/bootstrap.min.js" | prepend: site.baseurl }}></script>

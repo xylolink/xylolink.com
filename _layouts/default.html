@@ -2,26 +2,17 @@
 <html>
   {% include head.html %}
 
-  <body class="row m-0">
+  <body class="row m-0" >
     <!-- {% include header.html %}  -->
     {% include nav.html %}
-    {%- if page.title == "Xylolink" -%}    
     <div
       id="header-home"
       class="parallax-bg col-12"
       style="background-image: url({{ site.baseurl }}/img/{%if page.img %}{{page.img}}{%else%}{{"banner.jpg"}}{%endif%});"
-    ></div>    
-    {%- else -%}
-    <div 
-        id="header-home" 
-        class="parallax-bg col-12"
-        style="background-image: url({{ site.baseurl }}/img/{%if page.img %}{{page.img}}{%else%}{{"banner.jpg"}}{%endif%});"
-    >
-    </div>
-    {%- endif -%}
+    ></div>   
     {%- if page.title == "Xylolink" -%}
     <div id="top-container" class="col-lg-5 col-md-12">
-        <div class="container">            
+        <div class="container">
             <div id="main-slogan" class="d-flex align-items-center">
             <div class="col-12">
                 <img id="title-logo"src="/img/logo2019_light.png"></img>
