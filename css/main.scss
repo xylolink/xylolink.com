@@ -1,53 +1,193 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+@import 'bootstrap/bootstrap';
+// @import 'variables';
+// @import 'bootswatch';
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
+@import 'fontawesome/regular';
 
+body {
+  background-image: url(/img/topography.png);
+  position: relative;
+  min-height: 100vh;
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+#header-top {
+  background-color: rgba(255, 255, 255, 0);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-$spacing-unit:     30px;
+#header-home {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 100vh;
+  border-bottom: solid 8px #d7d6e4;
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+#header-bottom {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 55px;
+  height: 50vh;
+  border-bottom: solid 8px #d7d6e4;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+.sticky-nav {
+  // background-image: url(/img/topography.png);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
 
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
+// .sticky-bg {
+//   position: sticky;
+//   position: -webkit-sticky;
+//   top: 55px;
+//   height: 85vh;
+//   border-bottom: solid 8px #d7d6e4;
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+
+@mixin sm-screen {
+  #top-container {
+    position: relative;
+    margin-top: -95vh;
+  }
+  #top-container-page {
+    position: relative;
+    margin-top: -100vh;
+  }
+  #main-container {
+    position: relative;
+    min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    min-height: 20em;
+    margin-top: -80vh;
+  }
+  #page-title {
+    min-height: 20vh;
+  }
+}
+
+@mixin md-screen {
+  #top-container {
+    position: sticky;
+    top: 67px;
+    margin-top: -100vh;
+    height: 100%;
+  }
+  #top-container-page {   
+    position: sticky;
+    top: 67px;
+    margin-top: -100vh;
+    height: 100%;
+  }
+  #main-container {
+    position: relative;
+    margin-top: -100vh;
+    min-height: 20em;
+  }
+  #main-container-page {
+    position: relative;
+    margin-top: -95vh;
+    min-height: 20em;
+  }
+  #page-title {
+    min-height: 35vh;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  @include sm-screen; 
+}
+
+@include media-breakpoint-up(lg){
+  @include md-screen; 
 }
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+#title-logo {
+  width: 100%;
+  height: auto;
+}
+
+.white-shadow {
+  color: #ffffff;
+  text-shadow: 0px 0px 20px $black;
+}
+
+.bg-transparent-25 {
+  background-color: rgba(255,255,255,0.75)
+}
+
+.bg-dark-50 {
+  background-color: rgba(0,0,0,0.50)
+}
+
+.h-90 {
+  height: 90%;
+}
+.max-vh-25 {
+  max-height: 25vh;
+}
+
+.min-h-190px {
+  min-height: 190px;
+}
+
+#main-slogan {
+  min-height: 75vh;
+}
+
+#main-content {
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.etude-img {
+  background-image: url({{site.baseurl}}/img/etudeGE.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.separator {
+  height: 3em;
+  display: grid;
+  p {
+    color: $white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 5vh;
+    text-shadow: 0px 0px 10px $black;
+  }
+}
+
+#page-footer {
+  // background-image: url(/img/topography.png);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pre {
+    color: $gray-400;
+  }
+}

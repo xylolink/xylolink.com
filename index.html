@@ -1,64 +1,56 @@
 ---
 layout: default
 title: Xylolink
-type: homepage
+icon: /img/logo2019_bg.png
+place: left
+menu: main
 index: 1
 ---
-<div class="banner">
-    <div class="wrapper">
-        <div class="jumbotron jumbotron-banner">
-            <h2><i>{{ site.slogan }}</i></h2>
+
+<div class="d-flex flex-column justify-content-around h-90 m-1">
+  {% assign cols = "technologies,etudes,logistique" | split: "," %} {% for col in cols %}
+  <div class="p-1">
+    <div
+      id="carousel{{ col }}"
+      class="carousel slide w-100 max-vh-25 min-h-190px"
+      data-ride="carousel"
+      data-interval="false"
+    >
+      <ol class="carousel-indicators">
+        {% for item in site.[col] %}
+        <li
+          data-target="#carousel{{ col }}"
+          data-slide-to="{{ forloop.index0 }}"
+          {%if
+          forloop.first%}
+          class="active"
+          {%endif%}
+        ></li>
+        {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+        {% assign sorted = (site.[col] | sort: 'date') | reverse %} 
+        {% for item in sorted %}
+        <div class="carousel-item max-vh-25 min-h-190px {%if forloop.first%} active{%endif%}">
+          <img src="{{ item.thumb }}" class="d-block w-100" alt="Card image" />
+          <div class="carousel-caption text-light bg-dark-50 white-shadow ">
+            <a href="{{ item.url }}" class="text-light">
+              <h5>{{ col | capitalize }}</h5>
+              <p>{{ item.title }}</p>
+            </a>
+          </div>
         </div>
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#carousel{{ col }}" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel{{ col }}" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-</div>
-<div class="wrapper">
-    <div class="row">
-        <div class="col-md-8 col-sm-8 col-xs-12">
-            {% assign services_pages = site.pages | where:'type','services' | sorted:'index' %}
-            {% for services_page in services_pages %}
-            <h1><span class="glyphicon {{services_page.icon}}"></span> {{services_page.title}} </h1>
-
-            <ul class="list-group">
-                {% for post in site.posts offset: 0 %}
-                {% if post.categories contains services_page.ref %}
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-3 col-xs-12 ">
-                            <div class="thumbnail">
-                                <img src="{{ post.thumb }}" alt="{{ post.alt }}">
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-sm-9 col-xs-12 ">
-                            <div class="caption">
-                                <h3>{{ post.title }}</h3>
-                                <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-default" role="button">En savoir plus</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                </li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-            {% endfor %}
-
-            <h1><span class="glyphicon glyphicon-thumbs-up"></span> Références</h1>
-            <ul class="post-list">
-                <div class="row">
-                    {% for post in site.posts %}
-                    {% if post.categories contains 'references' %}
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <a href="{{ post.url }}"><img class="img-responsive img-rounded" src="{{ post.thumb }}" alt="{{ post.alt }}"></a>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-
-                </div>
-            </ul>
-
-        </div>
-        {% include aside_actus.html %}
-    </div>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
+  {% endfor %}
 </div>

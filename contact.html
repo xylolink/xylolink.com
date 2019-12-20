@@ -1,8 +1,26 @@
 ---
-layout: page
+layout: default
 title: Contact
-type: contact
-permalink: /contact/
-innav: true
+place: right
+menu: main
 index: 6
+img: wood-3092039_1920.jpg
 ---
+
+<div class="row justify-content-center text-justify mt-2">
+  <div class="col-5">
+    <h5>Nous Contacter</h5>
+    <form method="POST" action="https://formspree.io/contact@xylolink.com">
+      <label class="my-2" for="mailInput">Adresse e-mail</label>
+      <input class="form-control my-2" type="email" name="email" placeholder="e-mail" />
+      <label class="my-2" for="textInput">Message</label>
+      <textarea class="form-control my-2" name="message" placeholder="Message"></textarea>
+      <button class="btn btn-primary my-2" type="submit">Envoyer</button>
+    </form>
+  </div>
+  <div class="col-5">
+    <h5>XyloLink EURL</h5>
+    <p>26 rue du stade</p>
+    <p>33720 Landiras</p>
+  </div>
+</div>

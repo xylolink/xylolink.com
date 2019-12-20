@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html>
+  {% include head.html %}
 
-{% include head.html %}
+  <body class="row m-0" >
+    <!-- {% include header.html %}  -->
+    {% include nav.html %}
+    <div
+      id="header-home"
+      class="parallax-bg col-12"
+      style="background-image: url({{ site.baseurl }}/img/{%if page.img %}{{page.img}}{%else%}{{"banner.jpg"}}{%endif%});"
+    ></div>   
+    {%- if page.title == "Xylolink" -%}
+    <div id="top-container" class="col-lg-5 col-md-12">
+        <div class="container">
+            <div id="main-slogan" class="d-flex align-items-center">
+            <div class="col-12">
+                <img id="title-logo"src="/img/logo2019_light.png"></img>
+                <h1 class="white-shadow col-12 px-0 font-weight-lighter">
+                    {{ site.slogan1 }}
+                </h1>
+                <h2 class="white-shadow col-12 px-0">
+                    {{ site.slogan2 }}
+                </h2>
+            </div>
+            </div>            
+        </div>
+    </div>
+    <div id="main-container" class="col-lg-7 col-md-12">
+            {{ content }}
+    </div>
+    {%- else -%}
+    <div id="top-container-page" class="col-lg-12 col-md-12">
+        <div id="page-title" class="d-flex align-items-stretch">
+                <div class="col-lg-3 col-md-12 d-flex align-items-center">
+                    {%if page.type%}
+                    <h1 class="white-shadow col-12 px-0 font-weight-lighter">
+                            {{ page.type | capitalize }}
+                    </h1>                   
+                    {%else%}
+                    <h1 class="white-shadow col-12 px-0 font-weight-lighter">
+                            {{ page.title }}
+                    </h1>
+                    {%endif%} 
+                </div>
+        </div>
+    </div>
+    <div id="main-container-page" class="col-12 p-lg-5 p-md-2 d-flex justify-content-end">
+        <div id="main-content" class="p-lg-5 p-md-2 rounded-top col-lg-9 col-md-12">
+            {{ content }}
+        </div>
+    </div>
+    {%- endif -%}
 
-<body>
-
-{% include header.html %}
-
-<div id="page-content">
-    {{ content }}
-</div>
-
-{% include footer.html %}
-</body>
-
+    {% include footer.html %}
+  </body>
 </html>

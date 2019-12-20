@@ -1,25 +1,15 @@
-<footer id="site-footer">
+<footer id="page-footer" class="bg-dark text-light font-weight-light pt-1">
     <div class="container">
-        <div class="row text-muted text-center">
-
-            <div class="col-md-4">
-                <h3>Contact</h3>
-            </div>
-            <div class="col-md-4">
-                <h3>A propos</h3>
-                <p>{{ site.description }}</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Liens</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 text-center">
+                <p>{{ site.description | markdownify }}</p>
             </div>
         </div>
-        <hr>
-        <div class="row text-muted text-center">
-            <pre class="bg-footer">{{ site.title }}  |  {{ site.slogan }} |  Powered by <a href="http://jekyllrb.com">Jekyll</a>  |  Réalisé par <a href="mailto:co%6et%61ct%40%61rr%61%69olo%73%2eo%76h">A. Romain</a></pre>
+        <div class="col-12 text-center">
+            <pre>{{site.title}} | Powered by <a href="https://jekyllrb.com">Jekyll</a> | Site par <a href="mailto:co%6e&#116;%61&#99;t%40%61&#114;&#114;%61%69&#111;&#108;&#111;%73%2eo%76&#104;">A. Romain</a></pre>
         </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </div >
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src={{ "/js/jquery.min.js" | prepend: site.baseurl }}></script>
     <script src={{ "/js/bootstrap.min.js" | prepend: site.baseurl }}></script>
-    </footer>
+</footer>

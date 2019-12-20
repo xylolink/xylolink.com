@@ -8,15 +8,54 @@
 # Site settings
 title: Xylolink
 email: webmaster@xylolink.com
-slogan: L'innovation logistique et technologique au service de l'approvisionnement en bois
+slogan1: L'innovation logistique et technologique 
+slogan2: Au service de l'approvisionnement en bois
 permalink: /:categories/:title.html
 description: > # this means to ignore newlines until "baseurl:"
-  Xylolink construit une démarche d’accompagnement à la mise en oeuvre des innovations retenues, dépendant directement du niveau d’autonomie de l’entreprise. Afin que l’entreprise garde la maîtrise du processus d’innovation, Xylolink favorise la montée en compétence des acteurs par leur formation et leur implication directe à toutes les étapes.
+  Les actions de Xylolink sont principalement menées par [Adrien Arraiolos](https://www.linkedin.com/in/adrienarraiolos),
+  ingénieur agronome diplômé de l'Ecole nationale Supérieure d'Agronomie de Montpellier, spécialisé dans l'innovation technologique [AgroTIC](http://www.agrotic.org/blog/).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://xylolink.com" # the base hostname & protocol for your site
+url: "http://www.xylolink.com" # the base hostname & protocol for your site
 twitter_username: xylolink
 github_username:  xylolink
+excerpt_separator: "\n"
 
 # Build settings
 markdown: kramdown
 
+
+# Gems et extensions
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-paginate
+exclude:
+- Dockerfile
+
+collections_dir: collections
+
+collections:
+  references:
+  etudes:
+    output: true
+    permalink: /etudes/:title
+  logistique:
+    output: true
+    permalink: /logistique/:title
+  technologies:
+    output: true
+    permalink: /technologies/:title
+  actus:
+    output: true
+    permalink: /actualites/:title
+  
+defaults:
+  -
+    scope:
+      path: "collections/_etudes" # an empty string here means all files in the project
+    values:
+      icon: "fas fa-chart-area"
+
+sass:
+  sass_dir: css
+  style: compressed
