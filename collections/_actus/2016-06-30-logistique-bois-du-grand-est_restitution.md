@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Logistique Bois du Grand Est - Colloque de restitution et livrables"
+date: 2016-06-30 16:34:53 +0100
 thumb: /img/2016-06-30-colloque_GE.png
 pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
 pdf2: /pdf/Rapport_Final_Etude_Logistique.pdf

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "XyloSuite, notre suite applicative"
+date: 2018-11-30 16:34:53 +0100
 thumb: /img/2018-11-30-xylosuite.png
 category: xylolink
 tags:

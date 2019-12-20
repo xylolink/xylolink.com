@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Logistique Bois du Grand Est - Fin de projet"
+date: 2016-01-15 16:34:53 +0100
 thumb: /img/2016-01-15-projets-logistique-bois-GE.png
 pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
 pdf2: /pdf/Rapport_Final_Etude_Logistique.pdf
