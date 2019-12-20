@@ -31,15 +31,12 @@
     </div>
     {%- else -%}
     <div id="top-container-page" class="col-lg-12 col-md-12">
-        <div id="page-title" class="d-flex align-items-center">
-                <div class="col-12">
+        <div id="page-title" class="d-flex align-items-stretch">
+                <div class="col-lg-3 col-md-12 d-flex align-items-center">
                     {%if page.type%}
                     <h1 class="white-shadow col-12 px-0 font-weight-lighter">
                             {{ page.type | capitalize }}
-                    </h1>
-                    <h2 class="white-shadow col-12 px-0">
-                            {{page.title}}
-                    </h2>
+                    </h1>                   
                     {%else%}
                     <h1 class="white-shadow col-12 px-0 font-weight-lighter">
                             {{ page.title }}

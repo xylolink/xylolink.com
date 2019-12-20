@@ -8,37 +8,49 @@ index: 1
 ---
 
 <div class="d-flex flex-column justify-content-around h-90 m-1">
-        {% assign cols = "technologies,etudes,logistique" | split: "," %}
-        {% for col in cols %}
-        <div class="p-1">
-            <div id="carousel{{col}}" class="carousel slide w-100 max-vh-25 min-h-190px" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    {% for item in site.[col] %}
-                    <li data-target="#carousel{{col}}" data-slide-to="{{forloop.index0}}" {%if forloop.first%} class="active"{%endif%}></li>
-                    {% endfor %}
-                </ol>
-                <div class="carousel-inner">
-                    {% for item in site.[col] %}
-                    <div class="carousel-item max-vh-25 min-h-190px {%if forloop.first%} active{%endif%}">
-                        <img src="{{item.thumb}}" class="d-block w-100" alt="Card image">
-                        <div class="carousel-caption text-light bg-dark-50 white-shadow ">
-                            <a href="{{item.url}}" class='text-light'>
-                                <h5>{{col | capitalize}}</h5>
-                                <p>{{item.title}}</p>
-                            </a>
-                        </div>
-                    </div>                    
-                    {% endfor %}
-                </div>
-                <a class="carousel-control-prev" href="#carousel{{col}}" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel{{col}}" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+  {% assign cols = "technologies,etudes,logistique" | split: "," %} {% for col in cols %}
+  <div class="p-1">
+    <div
+      id="carousel{{ col }}"
+      class="carousel slide w-100 max-vh-25 min-h-190px"
+      data-ride="carousel"
+      data-interval="false"
+    >
+      <ol class="carousel-indicators">
+        {% for item in site.[col] %}
+        <li
+          data-target="#carousel{{ col }}"
+          data-slide-to="{{ forloop.index0 }}"
+          {%if
+          forloop.first%}
+          class="active"
+          {%endif%}
+        ></li>
+        {% endfor %}
+      </ol>
+      <div class="carousel-inner">
+        {% assign sorted = (site.[col] | sort: 'date') | reverse %} 
+        {% for item in sorted %}
+        <div class="carousel-item max-vh-25 min-h-190px {%if forloop.first%} active{%endif%}">
+          <img src="{{ item.thumb }}" class="d-block w-100" alt="Card image" />
+          <div class="carousel-caption text-light bg-dark-50 white-shadow ">
+            <a href="{{ item.url }}" class="text-light">
+              <h5>{{ col | capitalize }}</h5>
+              <p>{{ item.title }}</p>
+            </a>
+          </div>
         </div>
-        {% endfor %}               
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#carousel{{ col }}" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel{{ col }}" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
 </div>

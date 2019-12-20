@@ -1,29 +1,30 @@
 ---
 layout: default
 ---
+
 <div class="row">
-    <div class="col">
-        <h3>{{page.title}}</h3>
-            {% for item in site.[page.collection]  %}
-            <article>
-                <h4>{{ item.title }}</h4>
-                <div class="row">
-                    <div class="col-3">
-                        <a href="{{ item.url | prepend: site.baseurl }}"><img class="img-responsive img-thumbnail"
-                                src=" {{item.thumb}}"></a>
-                    </div>
-                    <div class="col-9">
-                        <span class="badge badge-secondary">{{ item.date | date: "%b %-d, %Y" }}</span>
-                        <span class="badge badge-secondary">{{ item.tags | join: ", " }}</span>
-                        <p>{{ item.excerpt | strip_html }}</p>
-                    </div>
-                </div>
-            
-            </article>
-            <hr class="style2">
-            {% endfor %}
-    </div>
-    <div class="col-3">
+  <div class="col">
+    <h3>{{ page.title }}</h3>
+    {% assign sorted = (site.[page.collection] | sort: 'date') | reverse %} {% for item in sorted %}
+    <article>
+      <a href="{{ item.url | prepend: site.baseurl }}" class="text-dark">
+        <h4>{{ item.title }}</h4>
+        <div class="row">
+          <div class="col-3">
+            <img class="img-responsive img-thumbnail" src=" {{ item.thumb }}" />
+          </div>
+          <div class="col-9">
+            <!-- <span class="badge badge-secondary">{{ item.date | date: "%b %-d, %Y" }}</span> -->
+            <span class="badge badge-secondary">{{ item.tags | join: ', ' }}</span>
+            <p>{{ item.excerpt | markdownify }}</p>
+          </div>
+        </div>
+      </a>
+    </article>
+    <hr class="style2" />
+    {% endfor %}
+  </div>
+  <!-- <div class="col-3">
         <h4>Derniers articles</h4>
         {% for item in site.actus  %}
         <div class="position-relative">
@@ -48,5 +49,5 @@ layout: default
         {%- endfor -%}
         {%- endunless -%}
         {%endfor%}
-    </div>
+    </div> -->
 </div>

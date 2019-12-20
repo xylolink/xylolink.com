@@ -19,5 +19,6 @@ La phase complémentaire d'approfondissement de 3 concepts innovants est en cour
 Ces approfondissements seront présentés au prochain comité de pilotage début février.
 
 *5 concepts innovants ont été présélectionnés pour l'approfondissement*
-![5 concepts présélectionnées]({{ page.thumb }}){: .img-fluid }
+
+![5 concepts présélectionnées]({{page.thumb}}){: .img-fluid }
 

@@ -4,28 +4,21 @@ layout: default
 
 <div class="row justify-content-center text-justify mt-2">
     <div class="col-10">
-        {% for post in site.actus  %}
+        {% assign sorted = (site.actus | sort: 'date') | reverse %} {% for post in sorted %}
         <article>
-
             <h3>
                 {{ post.title }}
             </h3>
-
             <div class="row">
-
                 <div class="col-md-12">
                     <h5><span class="badge badge-info">{{ post.category | capitalize }}</span>
                     <small><span>{% include date.html date=post.date %}</span></small></h5>
                     <p>{{ post.content }}</p>
                 </div>
-
             </div>
-
         </article>
         <hr class="style2">
-
         {% endfor %}
-
     </div>
 
 </div>

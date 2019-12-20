@@ -22,7 +22,7 @@ transformation.
 <div class="article-legend">
     Répartition des forêts de la zone d'étude par types de peuplements
 </div>
-![carte peuplements]({{ page.thumb }}){: .article-image }
+![carte peuplements]({{page.thumb}}){: .img-fluid }
 
 L’objectif de ce projet, qui s’appuie sur une **forte concertation avec les professionnels**, est de 
 proposer des pistes d’amélioration de la logistique de la filière bois à l’échelle du Grand-Est en 

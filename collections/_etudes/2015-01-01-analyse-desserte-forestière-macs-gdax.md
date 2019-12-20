@@ -25,13 +25,19 @@ L'étude a été clôturé en décembre 2014.
 Deux livrables ont été rendus :
 
 - Un atlas complet représentant les niveaux d'accès aux zones forestières sur la zone d'étude,
-![illustration atlas]({{page.illustration1}}){: .article-image-full}
+
+![illustration atlas]({{page.illustration1}}){: .img-fluid}
 
 - Un rapport d'analyse critique de l'état du réseau de desserte et des voies d'amélioration à disposition.
 
-![illustration rapport]({{page.illustration2}}){: .article-image}
-![desserte-conditions]({{page.illustration3}}){: .article-image}
-![aide_decision]({{page.illustration4}}){: .article-image}
-![desserte-conditions]({{page.illustration5}}){: .article-image}
-![desserte-conditions]({{page.illustration6}}){: .article-image}
-![desserte-conditions]({{page.illustration7}}){: .article-image}
+![illustration rapport]({{page.illustration2}}){: .img-fluid}
+
+![desserte-conditions]({{page.illustration3}}){: .img-fluid}
+
+![aide_decision]({{page.illustration4}}){: .img-fluid}
+
+![desserte-conditions]({{page.illustration5}}){: .img-fluid}
+
+![desserte-conditions]({{page.illustration6}}){: .img-fluid}
+
+![desserte-conditions]({{page.illustration7}}){: .img-fluid}

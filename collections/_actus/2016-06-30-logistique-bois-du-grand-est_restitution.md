@@ -8,7 +8,7 @@ pdf3: /pdf/zoom_sur_etude_Bois_GrdEst_pro_innovations.pdf
 ---
 L'étude sur la logistique bois rond du Grand Est est terminée et a été présentée au cours d'un colloque à Pont-à-Mousson le 9 juin 2014.
 
-![colloque]({{ page.thumb }}){: .img-fluid}
+![colloque]({{page.thumb}}){: .img-fluid}
 
 Ce colloque a permis la présentation des principaux résultats de l'étude entrecoupés de témoignages des professionnels directement concernés.
 
