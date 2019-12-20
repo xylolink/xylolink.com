@@ -4,6 +4,7 @@ title: "XyloSuite"
 level: 1
 date: 2019-12-01 16:34:53 +0100
 thumb: /img/xylosuite.png
+description: "Logiciel d'exploitation forestière, applications pour l'approvisionnement en bois"
 illustration1: /img/techno-metier_xylosuite.png
 carte_chantier: /img/techno-carto_chantier.png
 stocks: /img/techno-stocks.jpg
@@ -33,7 +34,7 @@ excerpt: Une solution complète pour planifier – piloter – maîtriser l’ap
    </div>
   <div itemprop="abstract">
     <p>
-      Depuis 2017, cette suite logicielle est mise à disposition de nos clients et apporte des solutions concrètes aux problèmes rencontrés depuis l’achat des bois sur pied jusqu’à la livraison aux sites de transformation.
+      Depuis 2017, cette suite logicielle est mise à disposition de nos clients et apporte des solutions concrètes aux problèmes rencontrés à l’achat des bois sur pied, en exploitation forestière et dans le transport jusqu'aux sites de transformation.
     </p>
   </div>
 </div>
