@@ -11,11 +11,12 @@ email: webmaster@xylolink.com
 slogan1: L'innovation logistique et technologique 
 slogan2: Au service de l'approvisionnement en bois
 permalink: /:categories/:title.html
-description: > # this means to ignore newlines until "baseurl:"
+footer: > # this means to ignore newlines until "baseurl:"
   Les actions de Xylolink sont principalement menées par [Adrien Arraiolos](https://www.linkedin.com/in/adrienarraiolos),
   ingénieur agronome diplômé de l'Ecole nationale Supérieure d'Agronomie de Montpellier, spécialisé dans l'innovation technologique [AgroTIC](http://www.agrotic.org/blog/).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.xylolink.com" # the base hostname & protocol for your site
+description: Entreprise éditrice d'applications d'exploitation forestière
+url: "https://www.xylolink.com" # the base hostname & protocol for your site
 twitter_username: xylolink
 github_username:  xylolink
 excerpt_separator: "\n"
@@ -26,11 +27,11 @@ markdown: kramdown
 
 # Gems et extensions
 plugins:
-- jekyll-feed
-- jekyll-sitemap
-- jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
 exclude:
-- Dockerfile
+  - Dockerfile
 
 collections_dir: collections
 

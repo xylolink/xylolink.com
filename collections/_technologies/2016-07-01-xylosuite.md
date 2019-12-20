@@ -14,13 +14,29 @@ excerpt: Une solution complète pour planifier – piloter – maîtriser l’ap
 
 ![xylosuite logo]({{page.thumb}}){: .img-thumbnail}
 
-Nos activités initiales – la consultance en logistique et le développement d’applications à destination de la filière bois – ont mis en évidence une demande forte en outils fiables de planification et suivi de l’approvisionnement en bois rond.
+<div itemscop itemtype="http://schema.org/WebApplication">
 
-En nous appuyant sur notre savoir faire et nos partenariats avec plusieurs instituts de recherche\* en innovations logistique et forestière, nous avons lancé le développement d’une suite logicielle répondant à cette demande.
-
-_\* Kedge Business School, CFFPA de Bazas, Ecole Supérieure du Bois, IMS (Université de Bordeaux, France), CRAN (université de Nancy, France), FORAC (Université Laval, Québec, Canada)..{:}_
-
-Depuis 2017, cette suite logicielle est mise à disposition de nos clients et apporte des solutions concrètes aux problèmes rencontrés depuis l’achat des bois sur pied jusqu’à la livraison aux sites de transformation.
+  <div itemprop="about">
+    <p>
+      Nos activités initiales – la consultance en logistique et le développement d’applications à destination de la filière bois – ont mis en évidence une demande forte en outils fiables de planification et suivi de l’approvisionnement en bois rond.
+    </p>
+  </div>
+  <div>
+    <p>
+    En nous appuyant sur notre savoir faire et nos partenariats avec plusieurs instituts de recherche\* en innovations logistique et forestière, nous avons lancé le développement d’une suite logicielle répondant à cette demande.
+    </p> 
+  </div>
+  <div>
+    <p>
+      <em>* Kedge Business School, CFFPA de Bazas, Ecole Supérieure du Bois, IMS (Université de Bordeaux, France), CRAN (université de Nancy, France), FORAC (Université Laval, Québec, Canada)...</em>
+    </p>
+   </div>
+  <div itemprop="abstract">
+    <p>
+      Depuis 2017, cette suite logicielle est mise à disposition de nos clients et apporte des solutions concrètes aux problèmes rencontrés depuis l’achat des bois sur pied jusqu’à la livraison aux sites de transformation.
+    </p>
+  </div>
+</div>
 
 ![xylosuite_1]({{page.illustration1}}){: .img-fluid}
 
