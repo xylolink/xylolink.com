@@ -46,6 +46,9 @@ collections:
   technologies:
     output: true
     permalink: /technologies/:title
+  xylosuite:
+    output: true
+    permalink: /xylosuite/:title
   actus:
     output: true
     permalink: /actualites/:title

@@ -9,6 +9,13 @@
 @import 'fontawesome/brands';
 @import 'fontawesome/regular';
 
+@font-face {
+  font-family: "xylosuite title";
+  src: url("/fonts/larabiefont\ rg.ttf");
+}
+
+$font-size-base: 1.05rem !default; // Assumes the browser default, typically `16px`
+
 body {
   background-image: url(/img/topography.png);
   position: relative;
@@ -53,6 +60,15 @@ body {
 //   height: 85vh;
 //   border-bottom: solid 8px #d7d6e4;
 // }
+
+.img-logo {
+  height: 36px;
+}
+
+.xylosuite-title {
+  font-family: 'xylosuite title';
+  text-align: left;
+}
 
 @mixin sm-screen {
   #top-container {
