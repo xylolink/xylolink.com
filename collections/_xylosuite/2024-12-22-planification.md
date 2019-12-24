@@ -23,7 +23,7 @@ specs:
 
 ### <a href='./intro#applis' class="text-dark"><i class="fas fa-chevron-left mr-2"></i>{{page.fullTitle}}</a>
 {: .xylosuite-title}
-<strong>{{ page.excerpt }} </strong>
+##### <strong>{{ page.excerpt }} </strong>
 {: .xylosuite-title}
 
 <ul class="list-group mt-4">
