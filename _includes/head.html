@@ -24,17 +24,14 @@
       site.description
     }}{% endif %}"
   />
-  <meta
-    property="og:site_name"
-    content="Xylolink - conseils et technologies pour l'approvisionnement en bois rond"
-  />
+  <meta property="og:site_name" content="Xylolink - conseils et technologies pour l'approvisionnement en bois rond" />
   <meta
     name="keywords"
     content="{% if page.keywords %} {{ page.keywords | strip_html | strip_newlines }} {% else %} {{
       'logiciel exploitation forestière, suivi des stocks, informatique forestière, bois, foret, progiciel, cartographie'
-    }}"
+    }}{% endif %}"
   />
-  <meta name="Author" content="XyloLink">
+  <meta name="Author" content="XyloLink" />
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
 
