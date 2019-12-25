@@ -6,9 +6,33 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta
     name="description"
-    content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{
+    content="{% if page.description %}{{
+      page.description | strip_html | strip_newlines | truncate: 160
+    }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{
       site.description
     }}{% endif %}"
+  />
+
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta
+    property="og:description"
+    content="{% if page.description %}{{
+      page.description | strip_html | strip_newlines | truncate: 160
+    }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{
+      site.description
+    }}{% endif %}"
+  />
+  <meta
+    property="og:site_name"
+    content="Xylolink - conseils et technologies pour l'approvisionnement en bois rond"
+  />
+  <meta
+    name="keywords"
+    content="{% if page.keywords %} {{ page.keywords | strip_html | strip_newlines }} {% else %} {{
+      'logiciel exploitation forestière, suivi des stocks, informatique forestière, bois, foret, progiciel, cartographie'
+    }}"
   />
 
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
