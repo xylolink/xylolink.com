@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Transport"
-fullTitle: "Planification du transport"
+fullTitle: "Gestion du transport"
 level: 6
 date: 2019-12-01 16:34:53 +0100
 thumb: /img/xylosuite.png
-description: "Logiciel et application mobile d'optimisation du transport de bois rond et édition des commandes de transport"
-excerpt: "Logiciel d'optimisation du transport de bois rond et d'édition des commandes de transport"
+description: "Logiciel et application mobile de gestion du transport de bois rond et édition des commandes de transport"
+subtitle: "Logiciel de gestion du transport de bois rond et d'édition des commandes de transport"
 img1: /img/2019-12-20-appli_transport.png
 specs: 
   - Gestion des commandes des clients
@@ -19,7 +19,7 @@ specs:
 
 ### <a href='./intro#applis' class="text-dark"><i class="fas fa-chevron-left mr-2"></i>{{page.fullTitle}}</a>
 {: .xylosuite-title}
-##### <strong>{{ page.excerpt }} </strong>
+##### <strong>{{ page.subtitle }} </strong>
 {: .xylosuite-title}
 
 <ul class="list-group my-4">

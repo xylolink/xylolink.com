@@ -16,7 +16,7 @@ layout: default
           <div class="col-9">
             <!-- <span class="badge badge-secondary">{{ item.date | date: "%b %-d, %Y" }}</span> -->
             <span class="badge badge-secondary">{{ item.tags | join: ', ' }}</span>
-            <p>{{ item.excerpt | markdownify }}</p>
+            <p>{% if item.subtitle %} {{item.subtitle | markdownify }}{% else %}{{ item.excerpt | markdownify }}{% endif %}</p>
           </div>
         </div>
       </a>

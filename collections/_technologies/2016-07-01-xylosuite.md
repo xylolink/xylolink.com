@@ -10,7 +10,7 @@ carte_chantier: /img/techno-carto_chantier.png
 stocks: /img/techno-stocks.jpg
 saisie_inventaire: /img/techno-appli_terrain.png
 login_pwd: /img/techno-login_pwd.png
-excerpt: Une solution complète pour planifier – piloter – maîtriser l’approvisionnement en bois rond
+subtitle: Une solution complète pour planifier – piloter – maîtriser l’approvisionnement en bois rond
 ---
 ![xylosuite logo]({{page.thumb}}){: .img-thumbnail}
 
@@ -42,7 +42,7 @@ excerpt: Une solution complète pour planifier – piloter – maîtriser l’ap
         {% else %}
           <h3 class="xylosuite-title mb-0 pb-0"><i class="fas fa-chevron-right mr-1"></i> {{p.title}}</h3>
         {% endif %}
-          <p>{{p.excerpt}}</p>
+          <p>{{p.subtitle}}</p>
         </a>
       </div>
     {% endfor %}
