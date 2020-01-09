@@ -4,6 +4,12 @@ layout: default
 
 <div class="row justify-content-center text-justify mt-2">
   <div class="col-11 col-md-10">
-  {{content}}
+    {% include tags_list.html %}
+    {{ content }}
+    {%if page.collection == 'actus' %}
+    <div class="my-3 text-right">
+      <a href="/actus/" class="text-primary">Retour aux actualités</a>
+    </div>
+    {% endif %} {% include share_bar.html %}
   </div>
 </div>

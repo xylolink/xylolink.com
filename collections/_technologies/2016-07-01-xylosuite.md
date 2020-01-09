@@ -3,16 +3,17 @@ layout: post
 title: "XyloSuite"
 level: 1
 date: 2019-12-01 16:34:53 +0100
-thumb: /img/xylosuite.png
+thumb: /img/xylosuite_thumb.png
+logo: /img/xylosuite.png
 description: "Logiciel d'exploitation forestière, applications pour l'approvisionnement en bois"
 illustration1: /img/techno-metier_xylosuite.png
 carte_chantier: /img/techno-carto_chantier.png
 stocks: /img/techno-stocks.jpg
 saisie_inventaire: /img/techno-appli_terrain.png
 login_pwd: /img/techno-login_pwd.png
-subtitle: Une solution complète pour planifier – piloter – maîtriser l’approvisionnement en bois rond
+subtitle: XyloSuite | logiciels d'exploitation forestière et d'approvisionnement en bois
 ---
-![xylosuite logo]({{page.thumb}}){: .img-thumbnail}
+![xylosuite logo]({{page.logo}}){: .img-thumbnail}
 
 
 ## Une solution complète pour 

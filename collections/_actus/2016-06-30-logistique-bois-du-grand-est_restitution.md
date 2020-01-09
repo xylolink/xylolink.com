@@ -6,6 +6,10 @@ thumb: /img/2016-06-30-colloque_GE.png
 pdf1: /pdf/presentation_logistique_bois_du_grand_est.pdf
 pdf2: /pdf/Rapport_Final_Etude_Logistique.pdf
 pdf3: /pdf/zoom_sur_etude_Bois_GrdEst_pro_innovations.pdf
+tags:
+  - étude
+  - logistique
+  - Grand-Est
 ---
 L'étude sur la logistique bois rond du Grand Est est terminée et a été présentée au cours d'un colloque à Pont-à-Mousson le 9 juin 2014.
 

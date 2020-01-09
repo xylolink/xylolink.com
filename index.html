@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Xylolink
+subtitle: Xylolink | conseil et technologies pour l'approvisionnement en bois rond 
 icon: /img/logo2019_bg.png
 place: left
 menu: main
@@ -32,11 +33,13 @@ index: 1
         {% assign sorted = (site.[col] | sort: 'date') | reverse %} 
         {% for item in sorted %}
         <div class="carousel-item max-vh-25 min-h-190px {%if forloop.first%} active{%endif%}">
-          <img src="{{ item.thumb }}" class="d-block w-100" alt="Card image" />
+          <div class="w-100 max-vh-25 d-flex align-items-stretch justify-content-center">
+              <img src="{{ item.thumb }}" class="w-100" style="object-fit: cover;" alt="Card image" />
+          </div>
           <div class="carousel-caption text-light bg-dark-50 white-shadow ">
             <a href="{{ item.url }}" class="text-light">
               <h5>{{ col | capitalize }}</h5>
-              <p>{{ item.title }}</p>
+              <small>{{ item.title }}</small>
             </a>
           </div>
         </div>

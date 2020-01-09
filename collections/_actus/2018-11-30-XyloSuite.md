@@ -4,8 +4,11 @@ title:  "XyloSuite, notre suite applicative"
 date: 2018-11-30 16:34:53 +0100
 thumb: /img/2018-11-30-xylosuite.png
 category: xylolink
+excerpt_separator: <!--more-->
 tags:
-  - offre
+  - suite applicative
+  - XyloSuite
+  - logiciel
 ---
 <time datetime="2018-11-30"></time>
 <div itemscop itemtype="http://schema.org/TechArticle">
@@ -14,6 +17,7 @@ tags:
       Xylolink met à la disposition de ses clients sa suite applicative permettant la gestion de l'approvisionnement en bois rond du chantier au parc à bois.
     </p> 
   </div>
+  <!--more-->
   <div itemprop="articleBody">
     <p>
       Gestion du chantier, planification roulante des activités futures, transmission aux opérateurs, éditions des documents légaux, remontée des stocks en temps réel, prévision et contrôle des stocks en flux continu, suivi des commandes...
