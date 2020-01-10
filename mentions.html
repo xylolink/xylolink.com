@@ -30,9 +30,44 @@ img: wood-3092039_1920.jpg
     <p>
       Code APE 70227 - N° TVA Intracom. FR 52 798902748
     </p>
-    <p>
-      Ce site n'utilise pas de cookies ou tout autre moyen de collecte d'informations personnelles.
-    </p>
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || []
+      _paq.push([
+        function() {
+          var self = this
+          function getOriginalVisitorCookieTimeout() {
+            var now = new Date(),
+              nowTs = Math.round(now.getTime() / 1000),
+              visitorInfo = self.getVisitorInfo()
+            var createTs = parseInt(visitorInfo[2])
+            var cookieTimeout = 33696000 // 13 mois en secondes
+            var originalTimeout = createTs + cookieTimeout - nowTs
+            return originalTimeout
+          }
+          this.setVisitorCookieTimeout(getOriginalVisitorCookieTimeout())
+        },
+      ])
+
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['setDoNotTrack', true])
+      _paq.push(['trackPageView'])
+      _paq.push(['enableLinkTracking'])
+      ;(function() {
+        var u = '//stats.cloud.romsys.ovh/'
+        _paq.push(['setTrackerUrl', u + 'matomo.php'])
+        _paq.push(['setSiteId', '3'])
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0]
+        g.type = 'text/javascript'
+        g.async = true
+        g.defer = true
+        g.src = u + 'matomo.js'
+        s.parentNode.insertBefore(g, s)
+      })()
+    </script>
+    <!-- End Matomo Code -->
   </div>
 </div>
 
@@ -57,5 +92,5 @@ img: wood-3092039_1920.jpg
   }
   document.getElementById('tlp').innerHTML = tlp('XmZmVPtjXFNtAvN5BFNjZvNkAFN5ZD==')
   document.getElementById('eml').innerHTML = tlp('L29hqTSwqRO4rJkioTyhnl5wo20=')
-  document.getElementById('tlp').href = "tel:" + tlp('L29hqTSwqRO4rJkioTyhnl5wo20=')
+  document.getElementById('tlp').href = 'tel:' + tlp('L29hqTSwqRO4rJkioTyhnl5wo20=')
 </script>
