@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-light sticky-nav col-12 px-5 font-weight-light d-flex justify-content-between">
-  {%- if page.title != 'Xylolink' -%}
+  {%- if page.title != 'Xylolink' && page.title != 'mentions' -%}
     {% assign sPages = site.pages | where: 'place', 'left' | sort: 'index' %}
     {% for p in sPages %}
       <a class="navbar-brand" href="{{ p.url | prepend: site.baseurl }}">
