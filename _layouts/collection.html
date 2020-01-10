@@ -7,21 +7,25 @@ layout: default
     <h2>{{ page.title }}</h2>
     {% assign sorted = (site.[page.collection] | sort: 'date') | reverse %} {% for item in sorted %}
     <article>
-      <a href="{{ item.url | prepend: site.baseurl }}" class="text-dark">
-        <h3>{{ item.title }}</h3>
-        <div class="row">
-          <div class="col-3">
-            <img class="img-responsive img-thumbnail" src=" {{ item.thumb }}" />
-          </div>
-          <div class="col-9">
-            <!-- <span class="badge badge-secondary">{{ item.date | date: "%b %-d, %Y" }}</span> -->
-            <span class="badge badge-secondary">{{ item.tags | join: ', ' }}</span>
-            <p>{% if item.subtitle %} {{item.subtitle | markdownify }}{% else %}{{ item.excerpt | markdownify }}{% endif %}</p>
+      <a href="{{ item.url | prepend: site.baseurl }}">
+        <div class="divider py-3">
+          <h3>{{ item.title }}</h3>
+          <div class="row">
+            <div class="col-3">
+              <img class="img-responsive img-thumbnail" src=" {{ item.thumb }}" />
+            </div>
+            <div class="col-9">
+              <!-- <span class="badge badge-secondary">{{ item.date | date: "%b %-d, %Y" }}</span> -->
+              <span class="badge badge-secondary">{{ item.tags | join: ', ' }}</span>
+              <p>
+                {% if item.subtitle %} {{ item.subtitle | markdownify }}{% else %}{{ item.excerpt | markdownify }}{%
+                endif %}
+              </p>
+            </div>
           </div>
         </div>
       </a>
     </article>
-    <hr class="style2" />
     {% endfor %}
   </div>
   <!-- <div class="col-3">

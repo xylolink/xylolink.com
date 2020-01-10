@@ -36,12 +36,12 @@ index: 1
           <div class="w-100 max-vh-25 d-flex align-items-stretch justify-content-center">
               <img src="{{ item.thumb }}" class="w-100" style="object-fit: cover;" alt="Card image" />
           </div>
-          <div class="carousel-caption text-light bg-dark-50 white-shadow ">
-            <a href="{{ item.url }}" class="text-light">
+          <a href="{{ item.url }}" class="text-light">
+            <span class="carousel-caption text-light bg-dark-75 white-shadow ">            
               <h5>{{ col | capitalize }}</h5>
-              <small>{{ item.title }}</small>
-            </a>
-          </div>
+              <small>{{ item.title }}</small>            
+            </span>
+          </a>
         </div>
         {% endfor %}
       </div>
