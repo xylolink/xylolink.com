@@ -11,7 +11,7 @@ tags:
   - logiciel
 ---
 <time datetime="2018-11-30"></time>
-<div itemscop itemtype="http://schema.org/TechArticle">
+<div itemscope itemtype="http://schema.org/TechArticle">
   <div itemprop="backstory">
     <p>
       Xylolink met à la disposition de ses clients sa suite applicative permettant la gestion de l'approvisionnement en bois rond du chantier au parc à bois.

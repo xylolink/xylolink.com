@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "XyloSuite"
+title: "Nos applications pour l'approvisionnement en bois - XyloSuite"
 level: 1
 date: 2019-12-01 16:34:53 +0100
 thumb: /img/xylosuite_thumb.png
@@ -23,7 +23,7 @@ subtitle: XyloSuite - logiciels d'exploitation forestière et d'approvisionnemen
 ## l’approvisionnement en bois rond
 {: .xylosuite-title .mb-4}
 
-<div itemscop itemtype="http://schema.org/WebApplication" class="jumbotron py-2">
+<div itemscope itemtype="http://schema.org/WebApplication" class="jumbotron py-2">
   <div itemprop="about">
     <p class="lead">
       La suite logicielle dédiée à l'approvisionnement en bois rond est mise à disposition de nos clients depuis 2017.

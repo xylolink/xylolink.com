@@ -16,7 +16,7 @@ tags:
 
 <time datetime="{{page.date}}"></time>
 
-<div itemscop itemtype="http://schema.org/TechArticle">
+<div itemscope itemtype="http://schema.org/TechArticle">
   <div itemprop="backstory">
     <p>
       Xylolink vous souhaite ses meilleurs vœux pour l'année 2020.
