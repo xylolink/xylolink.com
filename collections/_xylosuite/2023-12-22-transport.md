@@ -23,6 +23,7 @@ specs:
       - Edition de la commande au format PDF
       - Lien automatique vers google maps pour l'aide à la navigation (possibilité d'utiliser d'autres applications de guidage)
       - Carte détaillée des dépôts, des itinéraires d'accès et des contraintes afférentes
+      - Identification par QRCode à la bascule
   - title: Suivi des transporteurs
     details: 
      - Détection des retards de livraison
