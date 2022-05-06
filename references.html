@@ -10,23 +10,24 @@ img: piles_adour_modif.jpg
 ---
 
 <div class="row justify-content-center">
-{% for item in site.[page.collection]  %}
-    <div class="col-sm-12 col-md-6">
-        <div class="card mb-3">
-            <div class="row no-gutters d-flex align-items-center">
-                <div class="col-4">
-                    <img src="{{item.thumb}}" class="card-img" alt="{{item.title}}">
-                </div>
-                <div class="col-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{{item.title}}</h5>
-                        <p class="card-text">{{item.description}}</p>
-                        <a href="{{item.link}}"><p class="card-text"><small class="text-muted">Accéder au site</small></p></a>
-                        
-                    </div>
-                </div>
-            </div>
+  {% for item in site.[page.collection] %}
+  <div class="col-sm-12 col-md-6 mb-3 ">
+    <div class="card h-100">
+      <div class="row no-gutters d-flex align-items-center">
+        <div class="col-4">
+          <img src="{{item.thumb}}" class="card-img img-fluid" alt="{{item.title}}" style="max-width: 120px" />
         </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text">{{item.description}}</p>
+            <a href="{{item.link}}"
+              ><p class="card-text"><small class="text-muted">Accéder au site</small></p></a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-{%endfor%}
+  </div>
+  {%endfor%}
 </div>
