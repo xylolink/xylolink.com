@@ -1,3 +1,4 @@
+<time datetime="{{include.date | date:'%Y-%m-%d'}}">
 {% assign j = include.date | date: "%-d" %}
 {% assign m = include.date | date: "%-m" %}
 
@@ -21,3 +22,4 @@
   {% when '12' %}décembre
 {% endcase %}
 {{ include.date | date: "%Y" }}
+</time>

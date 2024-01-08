@@ -23,9 +23,9 @@ layout: default
               <span class="badge badge-info mr-1 my-1 font-weight-normal p-2 ">{{ tag }}</span>
               {% endfor %}
             </div>
-            <h6 class="m-0 ml-2">
+            <time class="m-0 ml-2" datetime="{{page.date | '%Y-%M-%D'}}">
               <small><span>{% include date.html date=post.date %}</span></small>
-            </h6>
+            </time>
           </div>
         </div>
         
