@@ -34,9 +34,8 @@
     }}{% endif %}"
   />
   <meta name="author" content="{{page.author | default: 'XyloLink'}}" />
-  <meta name="publish_date" content="{{page.date}}"/>
+  <meta name="publish_date" property="og:publish_date" content="{{page.date | date_to_xmlschema }}"/>
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <link
     rel="alternate"
