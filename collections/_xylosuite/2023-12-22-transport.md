@@ -5,7 +5,7 @@ fullTitle: "Gestion du transport"
 level: 6
 date: 2019-12-01 16:34:53 +0100
 thumb: /img/xylosuite.png
-description: "Logiciel et application mobile de gestion du transport de bois rond et édition des commandes de transport"
+description: "Logiciel de gestion du transport de bois rond et édition des commandes de transport"
 subtitle: "Logiciel de gestion du transport de bois rond et d'édition des commandes de transport"
 img1: /img/2019-12-20-appli_transport.png
 img2: /img/techno-transp_commande.png
@@ -28,7 +28,6 @@ specs:
     details: 
      - Détection des retards de livraison
      - Analyse du taux de service en temps réel
-  - title: "A venir : application mobile d'acquittement de chargement"
 ---
 
 ![xylosuite logo]({{page.thumb}}){: .img-fluid .img-logo}
