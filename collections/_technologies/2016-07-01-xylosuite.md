@@ -16,11 +16,11 @@ subtitle: XyloSuite - logiciels d'exploitation forestière et d'approvisionnemen
 ![xylosuite logo]({{page.logo}}){: .img-thumbnail}
 
 
-## Une solution complète pour 
+# Une solution complète pour 
 {: .xylosuite-title .mb-0}
-## **planifier – piloter – maîtriser**
+# **planifier – piloter – maîtriser**
 {: .xylosuite-title .mb-0}
-## l’approvisionnement en bois rond
+# l’approvisionnement en bois rond
 {: .xylosuite-title .mb-4}
 
 <div itemscope itemtype="http://schema.org/WebApplication" class="jumbotron py-2">

@@ -1,7 +1,8 @@
 FROM ruby:alpine
 RUN apk update && apk add build-base nodejs ruby-dev
 WORKDIR /src
-RUN gem install bundler
+RUN ruby --version && bundle --version && gem install bundler jekyll
+# RUN gem install bundler
 COPY Gemfile .
 COPY . /src
 RUN bundle install
