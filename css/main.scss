@@ -1,5 +1,7 @@
 ---
 ---
+@use "sass:map";
+@use "sass:math";
 
 @import 'bootstrap/bootstrap';
 // @import 'variables';
@@ -8,19 +10,27 @@
 @import 'fontawesome/solid';
 @import 'fontawesome/brands';
 @import 'fontawesome/regular';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 
 @font-face {
   font-family: 'xylosuite title';
-  src: url('/fonts/larabiefont\ rg.ttf');
+  src: url('/fonts/Exo2-VariableFont_wght.ttf');
 }
 
-$font-size-base: 1.05rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+html {
+  font-size: '16px',
+}
 
 body {
   background-image: url(/img/topography.png);
   position: relative;
   min-height: 100vh;
 }
+
+
 
 h1,
 h2,
@@ -31,12 +41,19 @@ h6 {
   font-weight: 300;
 }
 
+h1,
 h2,
 h3,
 h4 {
   color: #1b5e20;
 }
 
+h2 {
+  font-weight: 100;
+  background-color: $green;
+  padding: $spacer * .25;
+  color: $white;
+}
 #header-top {
   background-color: rgba(255, 255, 255, 0);
   height: 20vh;
@@ -85,7 +102,7 @@ h4 {
 }
 
 .xylosuite-title {
-  font-family: 'xylosuite title';
+  font-family: $font-family-xylosuite;
   text-align: left;
 }
 
@@ -239,7 +256,7 @@ a {
 }
 
 #main-content {
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .parallax-bg {
