@@ -20,7 +20,7 @@ $black:    #000 !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$grays: map.merge(
+$grays: map-merge(
   (
     "50": $gray-50,
     "100": $gray-100,
@@ -49,7 +49,7 @@ $cyan:    #17a2b8 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$colors: map.merge(
+$colors: map-merge(
   (
     "blue":       $blue,
     "indigo":     $indigo,
@@ -79,7 +79,7 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: map.merge(
+$theme-colors: map-merge(
   (
     "primary":    $primary,
     "secondary":  $secondary,
@@ -132,7 +132,7 @@ $enable-deprecation-messages:                 true !default;
 $spacer: 1rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$spacers: map.merge(
+$spacers: map-merge(
   (
     0: 0,
     1: ($spacer * .25),
@@ -147,7 +147,7 @@ $spacers: map.merge(
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$sizes: map.merge(
+$sizes: map-merge(
   (
     25: 25%,
     50: 50%,
@@ -297,7 +297,7 @@ $h4-font-size:                $font-size-base * 1.35 !default;
 $h5-font-size:                $font-size-base * 1.15 !default;
 $h6-font-size:                $font-size-base !default;
 
-$headings-margin-bottom:      math.div($spacer, 2) !default;
+$headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
@@ -661,7 +661,7 @@ $form-feedback-icon-invalid:        str-replace(url("data:image/svg+xml,%3csvg x
 
 $form-validation-states: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$form-validation-states: map.merge(
+$form-validation-states: map-merge(
   (
     "valid": (
       "color": $form-feedback-valid-color,
@@ -708,12 +708,12 @@ $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
 $nav-divider-color:                 $gray-200 !default;
-$nav-divider-margin-y:              math.div($spacer, 2) !default;
+$nav-divider-margin-y:              $spacer / 2 !default;
 
 
 // Navbar
 
-$navbar-padding-y:                  math.div($spacer, 2) !default;
+$navbar-padding-y:                  $spacer / 2 !default;
 $navbar-padding-x:                  $spacer !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
