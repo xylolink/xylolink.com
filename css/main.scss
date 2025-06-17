@@ -46,6 +46,7 @@ h2,
 h3,
 h4 {
   color: #1b5e20;
+  text-align: left;
 }
 
 h2 {
@@ -53,6 +54,7 @@ h2 {
   background-color: $green;
   padding: $spacer * .25;
   color: $white;
+  text-align: left;
 }
 #header-top {
   background-color: rgba(255, 255, 255, 0);
